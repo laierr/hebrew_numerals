@@ -47,6 +47,51 @@ describe('Index', function () {
 		});
 	});
 
+	describe ('#numberToText', function() {
+		it('correct answer to 100', function(done) {
+			expect(index.numberToText(100)).to.be.eql("mea");
+			done();
+		});
+	});
+
+	describe ('#numberToText', function() {
+		it('correct answer to 113', function(done) {
+			expect(index.numberToText(113)).to.be.eql("mea ve shalosh esre");
+			done();
+		});
+	});
+
+	describe ('#numberToText', function() {
+		it('correct answer to 121', function(done) {
+			expect(index.numberToText(121)).to.be.eql("mea esrim ve ahat");
+			done();
+		});
+	});
+
+	describe ('#numberToText', function() {
+		it('correct answer to 200', function(done) {
+			expect(index.numberToText(200)).to.be.eql("mataim");
+			done();
+		});
+	});
+
+	describe ('#numberToText', function() {
+		it('correct answer to 213', function(done) {
+			expect(index.numberToText(213)).to.be.eql("mataim ve shalosh esre");
+			done();
+		});
+	});
+
+	describe ('#numberToText', function() {
+		it('correct answer to 250', function(done) {
+			expect(index.numberToText(250)).to.be.eql("mataim ve hameshim");
+			done();
+		});
+	});
+
+
+
+
 
 	/**
     * 7, 10, 13, 28, 70, 100, 113, 121, 200, 213, 250, 400, 666
