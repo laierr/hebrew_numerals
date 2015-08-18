@@ -5,12 +5,6 @@ var index = require('../index'),
     expect = chai.expect;
 
 describe('Index', function () {
-	describe('#sum', function () {
-		it('sums two numbers', function (done) {
-			expect(index.sum(1, 2)).to.be.eql(3);
-			done();
-		});
-	});
 
 	describe ('#numberToText', function() {
 		it('correct answer to 7', function(done) {

@@ -1,10 +1,5 @@
 'use strict';
 
-var sum = function (a, b) {
-	return a + b;
-
-};
-
 var digits = {
 	0: "efes",
 	1: "ahat",
@@ -43,10 +38,7 @@ var hundreds = {
 };
 
 var numberToText = function (num) {
-	var array = num.toString().split('')
-	for (var i = 0; i < array.length; i++) {
-		array[i] = parseInt(array[i]);
-	};
+	var array = num.toString().split('').map(function (i) { return  parseInt(i); });
 
 	if (array.length === 1) {
 		return digits[array[0]]
@@ -64,22 +56,20 @@ var tensToText = function (ten, digit) {
 		return tens[ten];
 	} else if (ten === 1) { //ten case
 		return digits[digit] + " esre";
-	} else {
-		return tens[ten] + " ve " + digits[digit];
 	};
+	
+	return tens[ten] + " ve " + digits[digit];
 };
+
 
 var hundredsToText = function (hundred, ten, digit) {
 	if (ten === 0 && digit === 0 ) { // hundreds precise
-		return hundreds[hundred];
-	} else if (ten === 1 || digit === 0) { //ten case or round numbers
-		return hundreds[hundred] + " ve " + tensToText(ten, digit);
-	} else { 
-		return hundreds[hundred] + " " + tensToText(ten, digit);
-	}
+ 		return hundreds[hundred];
+	}; 
+	return hundreds[hundred] + (ten === 1 || digit === 0 ? " ve " : " ") + tensToText(ten, digit);
 };
 
 
-exports.sum = sum;
+//exports.sum = sum;
 exports.numberToText = numberToText;
 
