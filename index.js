@@ -69,7 +69,10 @@ var hundredsToText = function (hundred, ten, digit) {
 	return hundreds[hundred] + (ten === 1 || digit === 0 ? " ve " : " ") + tensToText(ten, digit);
 };
 
+if (typeof exports === "undefined") {
+	var exports = {};
+	window.hebrewNumbers = exports;
+};
 
-//exports.sum = sum;
 exports.numberToText = numberToText;
 
