@@ -22,14 +22,14 @@ describe('Index', function () {
 
 	describe ('#numberToText', function() {
 		it('correct answer to 13', function(done) {
-			expect(index.numberToText(13)).to.be.eql("shalosh esre");
+			expect(index.numberToText(13)).to.be.eql("sheloshesre");
 			done();
 		});
 	});
 
 	describe ('#numberToText', function() {
 		it('correct answer to 28', function(done) {
-			expect(index.numberToText(28)).to.be.eql("esrim ve shmone");
+			expect(index.numberToText(28)).to.be.eql("esrim veshmone");
 			done();
 		});
 	});
@@ -50,21 +50,21 @@ describe('Index', function () {
 
 	describe ('#numberToText', function() {
 		it('correct answer to 103', function(done) {
-			expect(index.numberToText(103)).to.be.eql("mea ve shalosh");
+			expect(index.numberToText(103)).to.be.eql("mea veshelosh");
 			done();
 		});
 	});
 
 	describe ('#numberToText', function() {
 		it('correct answer to 113', function(done) {
-			expect(index.numberToText(113)).to.be.eql("mea ve shalosh esre");
+			expect(index.numberToText(113)).to.be.eql("mea vesheloshesre");
 			done();
 		});
 	});
 
 	describe ('#numberToText', function() {
 		it('correct answer to 121', function(done) {
-			expect(index.numberToText(121)).to.be.eql("mea esrim ve ahat");
+			expect(index.numberToText(121)).to.be.eql("mea esrim veehad");
 			done();
 		});
 	});
@@ -78,14 +78,14 @@ describe('Index', function () {
 
 	describe ('#numberToText', function() {
 		it('correct answer to 213', function(done) {
-			expect(index.numberToText(213)).to.be.eql("mataim ve shalosh esre");
+			expect(index.numberToText(213)).to.be.eql("mataim vesheloshesre");
 			done();
 		});
 	});
 
 	describe ('#numberToText', function() {
 		it('correct answer to 250', function(done) {
-			expect(index.numberToText(250)).to.be.eql("mataim ve hameshim");
+			expect(index.numberToText(250)).to.be.eql("mataim vehameshim");
 			done();
 		});
 	});
