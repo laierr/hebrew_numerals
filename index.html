@@ -3,8 +3,15 @@
 <head>
 	<title>Hebrew Numbers</title>
 	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript">function buttonClick(rnd) {
+		console.log(rnd)
+		return document.getElementById("numeral").innerHTML = numberToText(rnd);
+	}</script>
 </head>
 <body>
-
+	<div id="main">
+		<p id="numeral">Click button for random numeral</p>
+	</div>
+	<button type="button" onclick="buttonClick(Math.floor((Math.random() * 999)))">Click Me!</button>
 </body>
 </html>

@@ -56,6 +56,8 @@ var tensToText = function (ten, digit) {
 		return tens[ten];
 	} else if (ten === 1) { //ten case
 		return digits[digit] + " esre";
+	} else if (ten === 0) { 
+		return "ve " + digits[digit];
 	};
 	
 	return tens[ten] + " ve " + digits[digit];

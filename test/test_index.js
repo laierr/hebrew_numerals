@@ -49,6 +49,13 @@ describe('Index', function () {
 	});
 
 	describe ('#numberToText', function() {
+		it('correct answer to 103', function(done) {
+			expect(index.numberToText(103)).to.be.eql("mea ve shalosh");
+			done();
+		});
+	});
+
+	describe ('#numberToText', function() {
 		it('correct answer to 113', function(done) {
 			expect(index.numberToText(113)).to.be.eql("mea ve shalosh esre");
 			done();
