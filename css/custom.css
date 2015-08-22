@@ -8,8 +8,13 @@ h1 {
 	text-align: center;
 }
 
+.ans {
+	margin-top: 8px;
+}
+
 .answer {
 	color: white;
+
 }
 .answer:hover {
 	color: black;
