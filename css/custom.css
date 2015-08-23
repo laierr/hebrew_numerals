@@ -15,6 +15,7 @@ h1 {
 
 .answer {
 	color: white;
+	padding-right: 10px;
 
 }
 .answer:hover {
